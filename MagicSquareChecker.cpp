@@ -10,7 +10,7 @@ void isMagic(int size, int a[4][4])
 	int limit = (size* ((size*size) + 1)) / 2;
 	int currLoc = 0;
 
-	int dupes[8];
+	int dupes[64];
 	for (int i = 0; i < sizeof(dupes) / sizeof(*dupes); i++)
 		dupes[i] = 0;
 	for (int i = 0; i < size; i++) {
